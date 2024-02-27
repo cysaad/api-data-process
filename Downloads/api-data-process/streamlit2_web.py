@@ -31,6 +31,7 @@ def predict(model_type: str, input_data):
 
 def main():
     st.title('Heart Disease Prediction Web App')
+    st.caption("(This is a test prediction and not medical advice)")
     with st.form("prediction_form"):
         st.selectbox("Choose the model for prediction", ['random_forest', 'decision_tree'], key="model_type")
         
